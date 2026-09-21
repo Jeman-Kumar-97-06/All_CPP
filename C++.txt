@@ -820,4 +820,298 @@ OOPs :
 OOPs Constructors:
 ** #include <iostream>
 ** #include <string>
+** using namespace std;
 
+** class myClass{
+**      public:
+**          myClass(){ --------> Constructor method name should be the exact match to class name.
+**              cout << "Hello!\n";
+**          }
+** };
+
+** class Car{
+**      public:
+**          string brand;
+**          string model;
+**          int    year;
+**          Car(string x, string y, int z){
+**              brand = x;
+**              model = y;
+**              year  = z;
+**          }
+** };
+
+** int main(){
+**      myClass myObj;
+**      Car myCar("BMW", "X5", 1999);
+**      return 0;
+** }
+
+
+OOPs Constructor Overload : 
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+** class Car{
+**      public:
+**          string brand;
+**          string model;
+**      Car(){      -------------------> Using the same Car() twice
+**          brand = "Unknown";
+**          model = "Unknown";
+**      }
+
+**      Car(String b, String m){ ------> Here's the other one
+**          brand = b;
+**          model = m;
+**      }
+** };
+
+** int main(){
+**      Car car1;
+**      Car car2("BMW", "x5");
+**      cout << "Car 1 \n";
+**      cout << "Brand : " << car1.brand << "\n";
+**      cout << "Model : " << car1.model << "\n";
+
+**      cout << "Car 2 \n";
+**      cout << "Brand : " << car2.brand << "\n";
+**      cout << "Model : " << car2.model << "\n";
+
+**      return 0;
+** }
+
+OOPs Access Specifiers : 
+    Access Specifiers control how the members of a class can be accessed.
+    They help protect data and organize code so that only the right parts can be seen or changed.
+
+** #include <iostream>
+** #include <string>
+** using namespace std;
+** class myClass{
+**      public:
+**          int x; ----------------> This is Public
+**      private:
+**          int y;  ---------------> This is private
+** };
+** class myClassX{
+**      int x; --------------------> These are private by default
+**      int y;
+** };
+
+** int main(){
+**      myClass myObj;
+**      myObj.x = 25; --------------> This is allowed
+**      myObj.y = 50; --------------> This is not Allowed
+**      return 0;
+** }
+
+OOPs Encapsulation:
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+** class Employee {
+**      private:
+**          int salary;
+**      public:
+**          void setSalary(int s){
+**              salary = s; 
+**          }
+**          int getSalary(){
+**              return salary;
+**          }
+** };
+
+** int main(){
+**      Employee myObj;
+**      myObj.setSalary(50000);
+**      cout << myObj.getSalary() << "\n";
+**      return 0;
+** }
+
+OOPs Friend Keyword:
+    Usually, the private memebers of a class can be accessed and changed using public methods like getters and setters.
+    But in some cases, you can use a special function called 'friend' function to access them directly.
+    A "friend" function is not a memeber of a class, but is allowed to access the class's private data.
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+** class Employee{
+**      private:
+**          int salary;
+**      public:
+**          Employee(int s){
+**              salary = s;
+**          }
+**          friend void displaySalary(Employee emp) -----> Declared Here
+** };
+
+** void displaySalary(Employee emp) { -------------------> Defined Here
+**      cout << "Salary: " << emp.salary << "\n"; -------> It can access the employee salary
+** }
+
+** int main() {
+**      Employee myEmp;
+**      displaySalary(myEmp);
+**      return 0;
+** }
+
+OOPs Inheritance : 
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+   NORMAL INHERITANCE   
+** class Vehicle{
+**      public:
+**          string brand = "Ford";
+**          void honk(){
+**              cout << "Tuut, tuut!\n";
+**          }
+** };
+
+** class Car: public Vehicle
+**      public:
+**          string model = "Mustang";
+** };
+
+   MULTI LEVEL INHERITANCE:
+** class myClass{
+**      public:
+**          void myFunc(){
+**              cout << "Some content in parent class.\n";
+**          }
+** };
+
+** class myChild: public myClass{
+** };
+
+** class myGrandChild : public myChild{
+** };
+
+   MULTIPLE INHERITANCE:
+** class myClassX{
+**      public:
+**          void myFuncX(){
+**              cout << "Some Content in myClass\n";
+**          }
+** };
+
+** class myOtherClassX{
+**      public:
+**          void myOtherFuncX(){
+**              cout << "Some content in myOtherClassX\n";
+**          }
+** };
+
+** class myChildX : public myClassX, public myOtherClassX{
+** };
+
+   INHERITANCE ACCESS WITH "Protected" ACCESS SPECIFIER:
+** class Emp{
+**      protected:
+**          int salary;
+** };
+
+** class Programmer: public Emp{
+**      public:
+**          int bonus;
+**          void setSalary(int s){
+**              salary = s;
+**          }
+**          void getSalary(){
+**              return salary;
+**          }
+** };
+
+** int main() {
+**      Car myCar;
+**      myCar.honk();
+**      cout << "----------------\n";
+
+**      myGrandChild myObj;
+**      myObj.myFunc();
+**      cout << "----------------\n";
+
+**      myChildX myObjX;
+**      myObjX.myFunc();
+**      myObjX.myOtherFunc();
+**      cout << "----------------\n";
+
+**      Programmer myPObj;
+**      myPObj.setSalary(50000);
+**      cout << myPObj.getSalary() << "\n";
+**      Emp myEObj;
+**      cout << myEObj.salary << "\n"; ----------> This will give error. Cuz the 'salary' is protected and u cn't access it.
+**      return 0;
+** }
+
+OOPs Polymorphism:
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+** class Animal{
+**      public:
+**          void animalSound(){
+**              cout << "The animal makes a sound\n";
+**          }
+** };
+
+** class Pig: public Animal{
+**      public:
+**          void animalSound(){
+**              cout << "The pig says: wee wee \n";
+**          }
+** };
+
+** class Dog: public Animal{
+**      pubic:
+**          void animalSound(){
+**              cout << "The dog says: bow wow \n";
+**          }
+** };
+
+** int main() {
+**      Animal myAnimal;
+**      Pig    myPetPig;
+**      Dog    myPetDog;
+
+**      myAnimal.animalSound();
+**      myPig.animalSound();
+**      myDOg.animalSOund();
+
+**      return 0;
+** }
+
+OOPs Polymorphism Virtual Funcs : 
+    A Virtual Func is a memeber function in the base class that can be ovewritten in derived class.
+    These funcs let different objects respond differently to the same func call.
+** #include <iostream>
+** #include <string>
+** using namespace std;
+
+** class Animal{
+**      public:
+**          void sound(){
+**              cout << "Animal Sounds\n";
+**          }
+** };
+
+** class Dog: public Animal{
+**      public:
+**          void sound(){
+**              cout << "Dog Barks\n";
+**          }
+** };
+
+** int main(){
+**      Animal* a;
+**      Dog     d;
+**      a = &d;
+**      a->sound();
+**      return 0;
+** }
