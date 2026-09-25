@@ -1,4 +1,4 @@
-Hello World Program:
+HELLO WORLD PROGRAM:
 ** #include <iostream>
 ** using namespace std;
 
@@ -10,7 +10,7 @@ Hello World Program:
 ** }
 
 
-Variables:
+VARIABLES:
 ## int    : Integers, whole nums, without decimals : 123, 30, 100
 ## double : stores floating point numbers, with decimals
 ## char   : stores chars, single chars such as 's' , 'S'. Chars should always be surrounded by single Quotes.
@@ -43,7 +43,7 @@ Variables:
 **      return 0;
 ** }
 
-User Input:
+USER INPUT:
 ** include <iostream>
 ** using namespace std;
 ** int main()
@@ -80,7 +80,7 @@ User Input:
 **      return 0;
 ** }
 
-Numbers:
+NUMBERS:
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -108,7 +108,7 @@ Numbers:
 **      return 0;
 ** }
 
-Chars:
+CHARS:
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -121,7 +121,7 @@ Chars:
 **      return 0;
 ** }
 
-'auto' Keyword:
+'AUTO' KEYWORD:
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -150,7 +150,7 @@ Ex : Cost of total Items:
 **      return 0;
 ** }
 
-Operators : 
+OPERATORS : 
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -185,7 +185,7 @@ Operators :
 **      return 0;
 ** }
 
-Maths:
+MATH:
 ** #include <iostream>
 ** #include <cmath>
 ** using namespace std;
@@ -197,7 +197,7 @@ Maths:
 **      return 0;
 ** }
 
-Strings:
+STRINGS:
 ** #include <iostream>
 ** #include <string>
 ** int main()
@@ -231,7 +231,7 @@ Strings:
 **      return 0;
 ** }
 
-Bools:
+BOOLS:
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -242,7 +242,7 @@ Bools:
 ** }
 
 
-If_Else Conditions:
+IF ELSE CONDITIONS:
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -262,7 +262,7 @@ If_Else Conditions:
 **      return 0;
 ** }
 
-If_Else Shorthand:
+IF ELSE SHORTHAND:
 ** #include <iostream>
 ** using namespace std;
 ** int main()
@@ -274,7 +274,7 @@ If_Else Shorthand:
 **      return 0;
 ** }
 
-Switch Cases:
+SWITCH CASE:
 ** #include <iostream>
 ** using namespce std;
 ** int main()
@@ -293,7 +293,7 @@ Switch Cases:
 **      return 0;
 ** }
 
-While Loop : 
+WHILE LOOP : 
 ** #include <iostream>
 ** using namespace std;
 ** int main(){
@@ -312,7 +312,7 @@ While Loop :
 **      return 0;
 ** }
 
-For Loop:
+FOR LOOP:
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -348,7 +348,7 @@ For Loop:
 ** }
 
 
-Arrays : 
+ARRAYS : 
 ** #include <iostream>
 ** #include <string>
 ** #include <vector>
@@ -396,7 +396,7 @@ Arrays :
 **      return 0;
 ** }
 
-Structs : 
+STRUCTS : 
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -450,7 +450,7 @@ Structs :
 **      return 0;
 ** }
 
-Enum : 
+ENUM : 
 ** #include <iostream>
 ** using namespace std;
 
@@ -482,7 +482,7 @@ Enum :
 **      return 0;
 ** }
 
-References & Memory Addresses : 
+REFERENCES AND MEMORY ADDRESSES : 
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -502,7 +502,7 @@ References & Memory Addresses :
 **      return 0;
 ** }
 
-Pointers:
+POINTERS:
 ** #include <iostream>
 ** using namespace std;
 
@@ -530,7 +530,7 @@ Pointers:
 ** }
 
 
-Memory Management:
+MEMORY MANAGEMENT:
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -556,7 +556,7 @@ Memory Management:
 **      return 0;
 ** }
 
-Using New and Delete Keyword With Arrays:
+USING NEW AND DELETE KEYWORD WITH ARRAYS:
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -583,7 +583,7 @@ Using New and Delete Keyword With Arrays:
 **      return 0;
 ** }
 
-Functions Simple : 
+SIMPLE FUNCTIONS : 
 ** #include <iostream>
 ** using namespace std;
 
@@ -606,7 +606,7 @@ Functions Simple :
 **      return 0;
 ** }
 
-Functions where Args are Arrays : 
+FUNCTIONS WITH ARGS AND ARRAYS AS ARGS : 
 ** #include <iostream>
 ** using namespace std;
 
@@ -622,7 +622,7 @@ Functions where Args are Arrays :
 **      return 0;
 ** }
 
-Functions : Pass Args by Reference: 
+FUNCTIONS: PASS ARGS BY REFERENCE: 
 ** #include <iostream>
 ** using namespace std;
 
@@ -659,7 +659,7 @@ Functions : Pass Args by Reference:
 **      return 0;
 ** }
 
-Functions : Structs as Args : 
+FUNCTIONS : STRUCTS AS ARGS : 
 ** #include <iostream>
 ** using namespace std;
 
@@ -687,7 +687,7 @@ Functions : Structs as Args :
 **      return 0;
 ** }
 
-Function Overloading : Allows multiple funcs to have the same name, as long as their params are different in type or number.
+FUNCTION OVERLOADING : Allows multiple funcs to have the same name, as long as their params are different in type or number.
 ** #include <iostream>
 ** using namespace std;
 
@@ -715,7 +715,7 @@ Function Overloading : Allows multiple funcs to have the same name, as long as t
 **      return 0;
 ** }
 
-Recursion: 
+RECURSION: 
 ** #include <iostream>
 ** using namespace std;
 
@@ -734,7 +734,7 @@ Recursion:
 **      return 0;
 ** }
 
-Lambda Funcs : Small anonymous funcs u can write directly in your code.
+LAMBDA FUNCTIONS : Small anonymous funcs u can write directly in your code.
 ** #include <iostream>
 ** #include <string>
 ** using namespace std;
@@ -1115,3 +1115,20 @@ OOPs Polymorphism Virtual Funcs :
 **      a->sound();
 **      return 0;
 ** }
+
+VECTOR ARRAY SIZE:
+   * When sizeof is used on a vector array, you get 24 ie., 3 pointers with size 8bytes each.
+   * 3 pointers are : begin of vector (Pointer for where the start of the vector is), end of vector and end of reserved memory for the vector
+** #include <iostream>
+** #include <vector>
+** using namespace std;
+
+** int main(){
+**      vector<int> x = {10, 20, 30, 1};
+**      cout << sizeof(x) <<"\n"; --> The output will always be 24 no matter the no., of elements in the array.
+**      cout << x.size() << "\n"; --> The output will be 4 (no of elements)
+**      return 0;
+** }
+
+CONST VS CONSTEXPR:
+

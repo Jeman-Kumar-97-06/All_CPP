@@ -9,8 +9,8 @@ int main(){
 	cout << "ENter a num that has 2 to 6 digits: ";
 	cin  >> x;
 	int k =  pow(10, to_string(x).length()-1);
-	for (int &i = k; i>=1 ;i=i/10){
-		cout << x/i << "\n";
+	for (int i = 10; i<=k ;i=i*10){
+		cout << x%i << "\n";
 	}
 	return 0;
 }
