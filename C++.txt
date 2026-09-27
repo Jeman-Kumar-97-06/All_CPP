@@ -1130,5 +1130,9 @@ VECTOR ARRAY SIZE:
 **      return 0;
 ** }
 
+RTTI : RunTime Type Identification: 
+    * It is a mechanism to find the type of an object dynamically from any available pointer or reference to the base type.
+    * YOU NEED TO FIRST LEARN VIRTUAL FUNCTIONS
+
 CONST VS CONSTEXPR:
 
