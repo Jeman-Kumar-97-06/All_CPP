@@ -13,5 +13,6 @@ int main(){
 	cout << "meal : " << meal  << "\n";
 	cout << "fPtr : " << fPtr  << "\n";
 	cout << "ft   : " << ft    << "\n";
+
 	return 0;
 }

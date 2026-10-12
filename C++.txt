@@ -9,6 +9,7 @@ HELLO WORLD PROGRAM:
 **      return 0;
 ** }
 
+------------------------------------------------------------------------------------------------------
 
 VARIABLES:
 ## int    : Integers, whole nums, without decimals : 123, 30, 100
@@ -26,6 +27,7 @@ VARIABLES:
 **      std::cout << myX << "\n";
 
 **      int myNum    = 100;
+
 **      int x = 5, y = 6, z = 7;
 **      std::cout<<"x+y+z = " << x+y+z << "\n";
 
@@ -42,6 +44,8 @@ VARIABLES:
 **      std::cout << "I want to add "<< nameT << " and " << myLetter << "\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 USER INPUT:
 ** include <iostream>
@@ -80,6 +84,8 @@ USER INPUT:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 NUMBERS:
 ** #include <iostream>
 ** using namespace std;
@@ -108,6 +114,8 @@ NUMBERS:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 CHARS:
 ** #include <iostream>
 ** #include <string>
@@ -121,6 +129,8 @@ CHARS:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 'AUTO' KEYWORD:
 ** #include <iostream>
 ** using namespace std;
@@ -132,6 +142,8 @@ CHARS:
 **      cout << y << "\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 Ex : Cost of total Items:
 ** #include <iostream>
@@ -149,6 +161,8 @@ Ex : Cost of total Items:
 
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 OPERATORS : 
 ** #include <iostream>
@@ -185,6 +199,8 @@ OPERATORS :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 MATH:
 ** #include <iostream>
 ** #include <cmath>
@@ -196,6 +212,8 @@ MATH:
 **      cout << lag(2) << "\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 STRINGS:
 ** #include <iostream>
@@ -231,6 +249,8 @@ STRINGS:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 BOOLS:
 ** #include <iostream>
 ** using namespace std;
@@ -241,6 +261,7 @@ BOOLS:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
 
 IF ELSE CONDITIONS:
 ** #include <iostream>
@@ -274,6 +295,8 @@ IF ELSE SHORTHAND:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 SWITCH CASE:
 ** #include <iostream>
 ** using namespce std;
@@ -293,6 +316,8 @@ SWITCH CASE:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 WHILE LOOP : 
 ** #include <iostream>
 ** using namespace std;
@@ -311,6 +336,8 @@ WHILE LOOP :
 **      cout << "Happy New Year!\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 FOR LOOP:
 ** #include <iostream>
@@ -347,6 +374,7 @@ FOR LOOP:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
 
 ARRAYS : 
 ** #include <iostream>
@@ -385,7 +413,7 @@ ARRAYS :
 **      cout << "---------------------------\n";
 
 **      int numbs[5] = {10, 20, 30, 40, 50};
-**      cout << sizeof(numbs) << "\n"; --> Prints 20 cuz : 1 int size = 4 bytes. Total size = 4 x 5 = 20 bytes.
+**      cout << sizeof(numbs) << "\n";                  --> Prints 20 cuz : 1 int size = 4 bytes. Total size = 4 x 5 = 20 bytes.
 **      cout << sizeof(numbs)/sizeof(numbs[0]) << "\n"; --> Prints 5
 
 **      cout << "---------------------------\n";
@@ -395,6 +423,8 @@ ARRAYS :
 
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 STRUCTS : 
 ** #include <iostream>
@@ -450,6 +480,8 @@ STRUCTS :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 ENUM : 
 ** #include <iostream>
 ** using namespace std;
@@ -482,6 +514,8 @@ ENUM :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 REFERENCES AND MEMORY ADDRESSES : 
 ** #include <iostream>
 ** #include <string>
@@ -490,7 +524,7 @@ REFERENCES AND MEMORY ADDRESSES :
 ** int main(){
 **      string food  = "Pizza";      -----> creates a memory space with 'Pizza' and that value is referenced with 'food'
 **      string &meal = food;         -----> Here if u use 'meal = "Pizza"', it would have created a new memory space with "Pizza" again.
-**      cout << food << "\n";               by using '&meal = food', we are saying meal = whatever was 'food' pointing to. THus we are
+**      cout << food << "\n";               by using '&meal = food', we are saying meal = diff,. name for "Pizza" mem location.
 **      cout << meal << "\n";               saving memory.
 **      cout << &meal << "\n";
 
@@ -501,6 +535,8 @@ REFERENCES AND MEMORY ADDRESSES :
 **      cout << &meal << "\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 POINTERS:
 ** #include <iostream>
@@ -529,6 +565,7 @@ POINTERS:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
 
 MEMORY MANAGEMENT:
 ** #include <iostream>
@@ -575,13 +612,15 @@ USING NEW AND DELETE KEYWORD WITH ARRAYS:
 
 **      for (int i = 0; i < numGuests; i++){
 **          cout << "Enter name of guest " << (i+1) << ": ";
-**          getline(cin, guests[i])
-**      }
-
-**      delete[] guests;
+**          getline(cin, guests[i]) --------------------------> We didn't use 'cin >> ' bcoz the input can be terminated when there's a
+**      }                                                       white space, newline or tab space. When it's getline, we can read       
+                                                                all even if the input is over input buffer size. Also, it has better
+**      delete[] guests;                                        error handling.
 
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 SIMPLE FUNCTIONS : 
 ** #include <iostream>
@@ -715,6 +754,8 @@ FUNCTION OVERLOADING : Allows multiple funcs to have the same name, as long as t
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 RECURSION: 
 ** #include <iostream>
 ** using namespace std;
@@ -734,6 +775,8 @@ RECURSION:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 LAMBDA FUNCTIONS : Small anonymous funcs u can write directly in your code.
 ** #include <iostream>
 ** #include <string>
@@ -749,7 +792,7 @@ LAMBDA FUNCTIONS : Small anonymous funcs u can write directly in your code.
 **      cout << "------------------------\n";
 
 **      const double PI = 3.14;
-**      auto area = [PI] (int rad){
+**      auto area = [PI] (int rad){  --------> The 'PI' inside '[]' is called 'capture' clause. 'parameters' go in '()'.
 **          cout << "The Area of the circle is : " << PI * rad * rad << "\n";
 **      };
 **      area(9);
@@ -764,6 +807,56 @@ LAMBDA FUNCTIONS : Small anonymous funcs u can write directly in your code.
 
 **      return 0;
 ** }
+
+CAPTURE BY REFERENCE : If you want the lambda to use the latest value of a variable(not just a copy), you can use "[&]" to capture it by
+reference. This means the lambda will work the original variable, not a seperate copy:
+** #include <iostream>
+** using namespace std;
+
+** int main() {
+**      int x = 10;
+**      auto show = [&x](){
+**          cout << x;
+**          x = x+1;
+**      };
+**      x = 20;
+**      show();             --> Prints 20
+**      cout << x << endl;  --> Prints 21
+**      return 0;
+** }
+
+PASSING LAMBDA TO FUNCTIONS: You can also pass a lambda function as an arg to another function. This is useful when you want to tell a 
+func what to do, not just what data to use.
+** #include <iostream>
+** #include <functional> --------> MUST INCLUDE THIS !
+** using namespace std;
+
+** void myFunction(function<void()> func) {
+**      func();
+** }
+
+** int main() {
+**      auto message = [](){cout << "Hello World!" << endl;};
+**      myFunction(message);
+**      return 0;
+** }
+
+USING LAMBDA IN LOOPS:
+** #include <iostream>
+** using namespace std;
+** int main() {
+**      for (int i = 0; i <= 3; i ++ ) {
+**          auto show = [i]() {
+**              cout << "Number : " << i << "\n";
+**          };
+**          show();
+**      }
+**      return 0;
+** }
+
+
+
+###########################################################################################################
 
 OOPs : 
 ** #include <iostream>
@@ -787,15 +880,15 @@ OOPs :
 **          void myMethod(){ --------------------------> Method Declared and Defined
 **              cout << "Hello World!\n";
 **          }; 
-**          void myMethod2(){ -------------------------> Method Declared but not Defined
+**          void myMethod2() --------------------------> Method Declared but not Defined
 **          int  speed(int maxSpeed); -----------------> Method Declared with arg but not Defined
 ** };
 
-** void xClass : myMethod2() {
+** void xClass :: myMethod2() {
 **      cout << "Hello Jeman\n";
 ** }
 
-** int xClass : speed(int maxSpeed){
+** int xClass  :: speed(int maxSpeed){
 **      return maxSpeed;
 ** }
 
@@ -816,6 +909,8 @@ OOPs :
 **      cout << xobj.speed(100) <<"\n";
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 OOPs Constructors:
 ** #include <iostream>
@@ -847,6 +942,7 @@ OOPs Constructors:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
 
 OOPs Constructor Overload : 
 ** #include <iostream>
@@ -882,6 +978,8 @@ OOPs Constructor Overload :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 OOPs Access Specifiers : 
     Access Specifiers control how the members of a class can be accessed.
     They help protect data and organize code so that only the right parts can be seen or changed.
@@ -907,6 +1005,8 @@ OOPs Access Specifiers :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 OOPs Encapsulation:
 ** #include <iostream>
 ** #include <string>
@@ -931,8 +1031,10 @@ OOPs Encapsulation:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 OOPs Friend Keyword:
-    Usually, the private memebers of a class can be accessed and changed using public methods like getters and setters.
+    Usually, the private members of a class can be accessed and changed using public methods like getters and setters.
     But in some cases, you can use a special function called 'friend' function to access them directly.
     A "friend" function is not a memeber of a class, but is allowed to access the class's private data.
 ** #include <iostream>
@@ -955,9 +1057,11 @@ OOPs Friend Keyword:
 
 ** int main() {
 **      Employee myEmp;
-**      displaySalary(myEmp);
+**      displaySalary(myEmp); --> See, i didn't use myEmp.displaySalary(), i just straight up used, "displaySalary(myEmp);"
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 OOPs Inheritance : 
 ** #include <iostream>
@@ -978,7 +1082,239 @@ OOPs Inheritance :
 **          string model = "Mustang";
 ** };
 
-   MULTI LEVEL INHERITANCE:
+--------------------------------------------------------------------------------------------------------------
+
+OOPs INHERITANCE WITH CONSTRUCTOR FUNCTIONS: Before a derived class's own fields can be initialized, the base class part of the object has to be built first. This sec covers how DERIVED CLASS CONSTRUCTORS call BASE CLASS CONSTRUCTORS, the member initalizer list syntax
+for passing arguments to a base constructor, the strict order of construction and destruction across the hierarchy & the common bugs that arise when these rules are violated.
+
+** #include <iostream>
+** #include <string>
+
+** using namespace std;
+
+** class Product {
+**      public:
+**          string name;
+**          double price;
+**          Product (const string& n, double p) : name(n), price(p) { --------> name(n) and price(p) means, n is "name" & p is "price"
+**              cout << "Product ctor: " << name << endl;
+**          }
+** };
+
+** class DigitalProduct: public Product {
+**      public:
+**          string downloadUrl;
+**          DigitalProduct(const string& n, double p, const string& url) : Product(n, p), downloadUrl(url) {
+**              cout << "Digital Product ctor: " << name << endl;
+**          }
+** };
+
+** int main(){
+**      DigitalProduct ebook("C++ CookBook", 19.99, "https://example.com/ebook");
+**      cout << ebook.name << " $" << ebook.price << " " << ebook.downloadUrl << "\n";
+**      return 0;
+** }
+
+# If you observe the above example, the output is : 
+    >> Product ctor: C++ CookBook
+    >> Digital Product ctor: C++ CookBook
+    >> C++ CookBook $19.99 https://example.com/ebook
+
+# So, even if i wrote "DigitalProduct ebook()" inside "main" func, the base class constructor ran first, the the derived class
+  Constructor. By the time DigitalProduct's body executes, "name" and "price" already hold valid values, becoz the Product part 
+  of the object has already been fully constructed.
+    Digital Prod Obj Created  
+    S1: Construct Product part name, price
+    S2: Construct DigitalProduct fields downloadUrl
+    S3: Run DigitalProduct body
+    S4: Object Ready to use
+
+--------------------------------------------------------------------------------------------------------------
+
+** class Product {
+**      public:
+**          string name  = "Unnamed";
+**          double price = 0.0;
+**          Product()    = default;
+**          Product(const string& n, double p) : name(n), price(p){}
+** };
+
+** class PhysicalProduct: public Product {
+**      public:
+**          double weight;
+**          PhysicalProduct(double w): weight(w) {}
+** };
+
+** int main(){
+**      PhysicalProduct box(2.5);
+**      cout << box.name << " " << box.price << " " << box.weight << endl;
+**      return 0;
+** }
+
+# If you observe the above example, you can see that, in the 'main' func, "PhysicalProduct" object 'box' is given only one arg, i.e.,
+  the weight value "2.5". Also, the Physical Product isn't given any other args. But, still the Product() constructor function for the 
+  class 'Product' is run. The args 'name' and 'price' take the default values "Unnamed" and 0.0 . See the Product construction func if
+  you have any doubts. This works only because of the line "Product() = default;" . If there's no default constructor, the code will 
+  fail if the derived class doesn't invoke the constructor func.
+
+--------------------------------------------------------------------------------------------------------------
+
+# The destruction order --> When constructing the parent contructor runs --> child constructor runs --> ....
+                            When destructing  the child object dies -------> Parent constructor dies --> ...
+
+** #include <iostream>
+** using namespace std;
+
+** class A {
+**      public:
+**          A() { cout << "A"  << endl;}
+**         ~A() { cout << "~A" << endl;}
+** };
+
+** class B : public A {
+**      public: 
+**          B() { cout << "B"  << endl;}
+**         ~B() { cout << "~C" << endl;}
+
+** class C : public B {
+**      public:
+**          C() { cout << "C"  << endl;}
+**         ~C() { cout << "~C" << endl;}
+
+** int main() {
+**      C c;
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+# OVERLOADED CONSTRUCTORS IN THE HEIRARCHY : 
+** #include <iostream>
+** #include <string>
+
+** using namespace std;
+
+** class Product(){
+**      public:
+**          string name;
+**          double price;
+**          int    stock;
+
+**          Product() : name("Unnamed"), price(0.0), stock(0) {
+**              cout << "Product Default" << endl;
+**          }
+
+**          Product(const string& n) : name(n), price(0.0), stock(0) {
+**              cout << "Product (name)" << endl;
+**          }
+
+**          Product(const string& n, double p, int s) : name(n), price(p), stock(s) {
+**              cout << "Product (name, price, stock)" << endl;
+**          }
+
+** };
+
+** class DigitalProduct : public Product {
+**      public:
+**          string downloadUrl;
+
+**          DigitalProduct() : Product(), downloadUrl("") {
+**              cout << "Digital Product default" << endl;
+**          }
+
+**          DigitalProduct(const string& n) : Product(n), downloadUrl("") {
+**              cout << "Digital Product (name)" << endl;
+**          }
+
+**          DigitalProduct(const string& n, double p, const string& url) : Product(n, p, 999), downloadUrl(url) {
+**              cout << "Digital Product (name, price, url)" << endl;
+**          }
+** };
+
+** int main() {
+**      DigitalProduct a;
+**      cout << "-----------------------" << endl;
+**      DigitalProduct b("Lightroom Preset");
+**      cout << "-----------------------" << endl;
+**      DigitalProduct c("C++ CookBook", 19.99, "https://example.com");
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+#INHERITING CONSTRUCTORS WITH "using Base::Base;" : 
+# Usually : 
+** class DigitalProduct: public Product {
+**      public:
+**          string downloadUrl = "";
+
+**          DigitalProduct() : Product() {}
+**          DigitalProduct(const string& n) : Product(n) {}
+**          DigitalProduct(const string& n, double p, int s) : Product(n, p, s) {}
+** };
+
+#With "using Base::Base;" shortcut:
+** #include <iostream>
+** #include <string>
+
+** class Product(){
+**      public:
+**          string name;
+**          double price;
+**          int    stock;
+
+**          Product() : name("Unnamed"), price(0.0), stock(0) {}
+**          Product(const string& n) : name(n), price(0.0), stock(0) {}
+**          Product(const string& n, double p, int s) : name(n), price(p), stock(s) {}
+** };
+
+** class DigitalProduct: public Product {
+**      public:
+**          string downloadUrl = "";
+
+**          using  Product:: Product;
+** };
+
+** int main() {
+**      DigitalProduct a;
+**      DigitalProduct b("LightRoom Preset");
+**      DigitalProduct c("C++ CookBook", 19.99, 100);
+
+**      cout << a.name << endl;
+**      cout << b.name << endl;
+**      cout << c.name << " $" << c.price << " stock=" << c.stock << " url=" << c.downloadUrl << endl;
+
+**      return 0;
+** };
+
+# Output : 
+    Unnamed
+    LightRoom Preset
+    C++ CookBook, 19.99 stock=100 url=''
+
+# Rules of "using Base::Base;" shortcut : 
+  Rule:
+    Inherits constructors visible at that scope 
+    Detail : Private Base constructor are not inherited.
+
+  Rule:
+    Members of the derived class get default-intialized.
+    Detail : Any Inherited constructor only sees the base's parameters; derived members rely on in-class initializers.
+
+  Rule:
+    Does not inherit copy/move constructors.
+    Detail : These are execluded; the compiler generates them for the derived class as usual.
+
+  Rule:
+    You can still write your own constructors for derived class.
+    They coexist with the inherited ones, the overload resoution picks the best match.
+
+# "using Base::Base;" fits when the derived class is mostly a wrapper or a marker type that doesn't carry new mandatory state.
+  If your derived has its own non-defaultable fields, write explicit constructors that intialize them properly instead of 
+  relying on inheritance.
+--------------------------------------------------------------------------------------------------------------
+
+MULTI LEVEL INHERITANCE:
 ** class myClass{
 **      public:
 **          void myFunc(){
@@ -992,7 +1328,7 @@ OOPs Inheritance :
 ** class myGrandChild : public myChild{
 ** };
 
-   MULTIPLE INHERITANCE:
+MULTIPLE INHERITANCE:
 ** class myClassX{
 **      public:
 **          void myFuncX(){
@@ -1010,7 +1346,7 @@ OOPs Inheritance :
 ** class myChildX : public myClassX, public myOtherClassX{
 ** };
 
-   INHERITANCE ACCESS WITH "Protected" ACCESS SPECIFIER:
+INHERITANCE ACCESS WITH "Protected" ACCESS SPECIFIER:
 ** class Emp{
 **      protected:
 **          int salary;
@@ -1048,6 +1384,8 @@ OOPs Inheritance :
 **      cout << myEObj.salary << "\n"; ----------> This will give error. Cuz the 'salary' is protected and u cn't access it.
 **      return 0;
 ** }
+
+--------------------------------------------------------------------------------------------------------------
 
 OOPs Polymorphism:
 ** #include <iostream>
@@ -1087,6 +1425,8 @@ OOPs Polymorphism:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
 OOPs Polymorphism Virtual Funcs : 
     A Virtual Func is a memeber function in the base class that can be ovewritten in derived class.
     These funcs let different objects respond differently to the same func call.
@@ -1116,9 +1456,128 @@ OOPs Polymorphism Virtual Funcs :
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
+VIRTUAL FUNCTIONS:
+
+## No Virtual Function:
+** class Animal {
+**      public:
+**          void sound(){
+**              cout << "Animal Sound\n" << endl;
+**          }
+** };
+
+** class Dog: public Animal {
+**      public:
+**          void sound(){
+**              cout << "Dog Barks" << endl;
+**          }
+** };
+
+** int main() {
+**      Animal* a;      --> Declare a pointer, pointing to a memory location to store "Animal" objects.
+**      Dog     d;      --> Create an object of type : "Dog" (derived class)
+**      a = &d;         --> Point the base class pointer to the Dog Object.
+**      a -> sound();   --> Prints "Animal Sound" --> "a-> sound()" is same as "(*a).sound()"
+**      return 0;
+** }
+
+## With Virtual Function:
+** class Animal {
+**      public:
+**          virtual void sound() {
+**              cout << "Animal Sound" << endl;
+**          }
+** };
+
+** class Dog: public Animal {
+**      public:
+**          void sound() override {
+**              cout << "Dog Barks" << endl;
+**          }
+** };
+
+** int main() {
+**      Animal* a;
+**      Dog     d;
+**      a = &d;
+**      a -> sound();   --> Prints : "Dog Barks"
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+TEMPLATES:
+## They let you write a func or class that works with different data types. They help avoid repeating code and make programs more
+## flexible.
+
+## Creating a template func by using the 'template' keyword:
+** template <typename T>
+** T add(T a, T b) {
+**      return a+b;
+** }
+
+** int main() {
+**      cout << add<int>(5,3) << "\n";
+**      cout << add<double>(2.5, 1.5) << "\n";
+**      return 0;
+** }
+
+## Creating a class template to making classes that work with any data type:
+** template <typename T>
+** class Box{
+**      public:
+**          T value;
+**          Box(T v) {
+**              value = v;
+**          }
+**          void show() {
+**              cout << "Value: " << value << endl;
+**          }
+** };
+
+** int main() {
+**      Box<int> intBox(50);
+**      Box<string> strBox("Hello");
+**      intBox.show();
+**      strBox.show();
+**      return 0;
+** }
+
+## Another Example:
+** template <typename T1, typename T2>
+** class Pair {
+**      public:
+**          T1 first;
+**          T2 second;
+
+**          Pair(T1 a, T2 b) {
+**              first  = a;
+**              second = b;
+**          }
+
+**          void display() {
+**              cout << "First: " << first << ", Second: " << second << "\n";
+**          }
+** };
+
+** int main() {
+**      Pair<string, int> person("John", 30);
+**      Pair<int, double> score(51, 9.5);
+
+**      person.display();
+**      score.display();
+
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
 VECTOR ARRAY SIZE:
    * When sizeof is used on a vector array, you get 24 ie., 3 pointers with size 8bytes each.
-   * 3 pointers are : begin of vector (Pointer for where the start of the vector is), end of vector and end of reserved memory for the vector
+   * 3 pointers are : begin of vector (Pointer for where the start of the vector is), end of vector and end of reserved memory for the
+     vector
 ** #include <iostream>
 ** #include <vector>
 ** using namespace std;
@@ -1130,9 +1589,363 @@ VECTOR ARRAY SIZE:
 **      return 0;
 ** }
 
+--------------------------------------------------------------------------------------------------------------
+
+POINTERS:
+# Declare a integer value and define it. Declare a pointer and assign the memory of the integer value to it.
+# Then, print the value using only the pointer by dereferencing it : 
+** #include <iostream>
+** using namespace std;
+** int main(){
+**      int  x = 10;
+**      int* i = &x;
+**      cout << *i << endl;
+**      return 0;
+** }
+
+# Changing OG Values using only a Pointer:
+** #include <iostream>
+** using namespace std;
+
+** int main(){
+**      int  x = 50;
+**      int* u = &x;
+**      *u     = 99;
+**      cout << x << endl;
+**      return 0;
+** }
+
+# Pointer-to-Pointer -> Double Pointer:
+** #include <iostream>
+** int main() {
+**      int    x = 42;
+**      int*  p1 = &x;
+**      int** p2 = &p1;
+**      cout << **p2 << endl; --> This will print 42
+** }
+
+# Pointer Arithmetic --> Incrementing Pointer values:
+# Declare an integer array named 'data' with the elements {10, 20, 30, 40, 50}. Declare an int pointer and point it to the first num of
+# .. the array. Use pointer increment and dereference operator to traverse the array and print all 5 elements.
+
+** #include <iostream>
+** int main() {
+**      int dat[]     = {10, 20, 30, 40, 50};
+**      int size      = sizeof(dat)/sizeof(dat[0]);
+**      int* data_ptr = data;
+**      cout << "Printing Elements using pointer increment: " << endl;
+**      for (int i = 0; i < size; ++i) {
+**          cout << *(data_ptr+1) << endl;
+**      }
+**      return 0;
+** }
+
+# Just like the above example, we will using pointer dereference operator to access a random element:
+** #include <iostream>
+** int main() {
+**      int scores[]  = {85, 90, 78, 95, 88};
+**      int* scr_ptr  = scores;
+**      int third_ele = *(scr_ptr + 2);
+**      cout << third_ele << endl;
+**      return 0;
+** }
+
+# Pointer Arithmetic on char Array : 
+** #include <iostream>
+** int main() {
+**      char word[] = "CODE";
+**      char*     p = word;
+**      char third  = *(p+2);
+**      cout << third << endl;
+**      return 0;
+** }
+
+# Write a function named 'increment_value' that takes an int pointer as its only arg. Inside the func, increment the value that the
+# ...pointer points to by 10. In 'main', call the function using the address of an int value and print the updated value.
+
+** #include <iostream>
+** using namespace std;
+
+** void increment_val(int* ptr) {
+**      if (ptr != nullptr) {
+**          *ptr += 10;    ---> remember -> *ptr means the value present in the memory location 'ptr'
+**      }
+** }
+
+** int main() {
+**      int counter = 50;
+**      cout << counter << endl;
+**      increment_val(&counter);
+**      cout << counter << endl;
+**      return 0;
+** }
+
+# CHECK IF A POINTER IS A NULL POINTER:
+** #include <iostream>
+** #include <string>
+** using namespace std;
+** int main() {
+**      int* x = nullptr;
+**      if (x == nullptr) {
+**          cout << "POinter is invalid and null and unable to dereference" << endl;
+**          int valid_data = 10;
+**          x              = &valid_data;
+**      }
+**      //THE FOLLOWING CONDITION WORKS TOO COZ IT'S NOT A 'ELSE IF':
+**      if ( x != nullptr) {
+**          cout << Pointer is valid and points to memory location of : << *x << endl;
+**      }
+**      return 0;
+** }
+
+## ARRAY SUMMATION:
+## sum of elements of array should be calculated. Use only pointers no matter what. No index access allowed with '[]' operator.
+
+** #include <iostream>
+** using namespace std;
+
+** int main() {
+**      int arr[] = {1,5,10,15,20};
+**      int*    i = arr;
+**      int   sum = 0;
+**      int   len = sizeof(arr)/sizeof(*i);
+**      for (int j = 0; j < len; j++) {
+**          sum += *(i+j);
+**      }
+**      cout << sum << endl;
+**      return 0;
+** }
+
+## FINDING MINIMUM :
+## Only Pointers allowed:
+** #include <iostream>
+** using namespace std;
+** int * find_min_ptr(int* x, int len) {
+**      int* min = x;
+**      for (int i = 0; i < len ; i++) {
+**              if (*(x+i) < *min){
+**                      min = (x+i);
+**              }
+**      }
+**      return min;
+** };
+
+** int main(){
+**      int data[] = {45, 12, 67, 8, 33};
+**      int* k = find_min_ptr(data, sizeof(data)/sizeof(data[0]));
+**      cout << *k << endl;
+**      return 0;
+** }
+
+## 2D ARRAY TRAVERSAL:
+** #include <iostream>
+** #include <vector>
+** using namespace std;
+** int main() {
+**      int mat[3][3] = {{1,2,3},
+**                       {4,5,6},
+**                       {7,8,9}}
+**      const int ROWS  = 3;
+**      const int COLS  = 3;
+**      const int TOTAL = ROWS * COLS;
+**      int* m = (int*)mat;
+**      for (int i = 0; i < TOTAL; ++i) {
+**          cout << *(m+i) << ",";
+**      }
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+## STATIC TYPING VS DYNAMIC TYPING:
+## STATIC TYPING : 
+##  This is a risk free process.
+##  Type checking occurs at the compile time.
+##  You declare the type of the variable and then define it.
+## Dynamic Typing:
+##  No need for declaring the type if the variable.
+##  Type checking happens at runtime. 
+##  The auto keyword:
+    ** #include <iostream>
+    ** int main() {
+    **      int  a = 42;
+    **      auto b = 42;
+    **      cout << "Value of b: " << b << endl;    --> Output : 42
+    **      return 0;
+    ** }
+##  The 'decltype' keyword:
+    ** #include <iostream>
+    ** #include <type_traits>
+    ** int main() {
+    **      int x = 5;
+    **      double y = 10.5;
+    **      decltype(x+y) result = x+y;
+    **      cout << result << endl;
+    **      return 0;
+    ** }
+
+## Checking for the type: Part1:
+## You can check the type with "std::is_same". It is a type trait in C++ provided by the "<type_traits>" header. It is used to compare..
+## ..two types and determine if they are the same. The trait will return a "std::true_type" if the types are identical and a ...
+## .. "std::false_type" otherwise. Here's the syntax used : 
+** #include <iostream>
+** #include <type_traits>
+
+** int main() {
+**      bool result1 = std::is_same<int, int>::value;
+**      bool result2 = std::is_same<int, double>::value;
+
+**      std::cout<<std::boolalpha;
+
+**      std::cout<< "int and int are the same : " << result1 << std::endl;
+**      std::cout<< "int and double are not the same : " << result2 << std::endl;
+
+**      return 0;
+** }
+
+## Checking for the type: Part2:
+## "std::is_same" helps ensure type safety by allowing compile-time checks to validate that types match the expected ones, which is 
+## ...particularly useful in templates and generic programming. And here is how we can use it with our example:
+
+** #include <iostream>
+** #include <type_traits>
+
+** int main() {
+**      int x = 5;
+**      double y = 10.5;
+
+**      decltype(x+y) result = x+y;
+
+**      std::cout<< "Type of result: " << (std::is_same< decltype(result), double >:: value ? "double" : "unknown" << std::endl;
+
+**      return 0;
+** }
+
+## Combined Usage in Function Templates: part 1 :
+## Now let's combine 'auto' and 'decltype' in a real-world scenario. Consider the template func that adds two numbers of different ...
+## ...types:
+** #include <iostream>
+** #include <type_traits>
+
+** template <typename T, typename U>
+** auto add(T a, U b) -> decltype(a+b) {
+**      return a+b;
+** }
+
+** int main() {
+**      int    x =  5;
+**      double y = 10.5;
+**      auto result = add(x,y);     --> The add function will declare the type automatically using 'decltype'
+
+**      std::cout<< "Result: " << result << std::endl;
+
+**      std::string s1 = "Hello, ", s2 = "world!";
+
+**      auto result2 = add(s1, s2); --> The add function will declare the type autmatically using 'decltype' to 'string'
+
+**      std::cout << "Result: " << result2 << std::endl;
+
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+# OPERATOR OVERLOAD:
+    Operator overloading allows us to redifine how standard operators work with different types of objects
+
+** #include <iostream>
+** using namespace std;
+
+** class Number {
+**      public:
+**          int n;
+**          Number (int set_n) {
+**              n = set_n;
+**          }
+**          Number operator+(const Number &numA) {
+**              return Number(this -> n + numA.n); ---> "this->n" is 5 and "numA.n" is 10
+**          }
+**          bool operator==(const Number &numA) {
+**              if (this->n == numA.n) return true;
+**              else return false;
+**          }
+** };
+
+** int main() {
+**      Number a(5);
+**      Number b(10);
+**      Number c = a+b;
+**      cout << "c.n: " << c.n << endl;
+
+**      if (a==c) cout << "a==c" << endl;
+**      else cout << "a!=c " << endl;
+
+**      Number d(15);
+**      if (c==d) cout << "c == d" << endl;
+**      else cout << "c!=d" << endl;
+
+**      return 0;
+** }
+
+--------------------------------------------------------------------------------------------------------------
+
+## The "constexpr" specifier :
+## The "constexpr" specifier in C++ indicates that a value or function can be evaluated at compile time. It allows the compiler to
+## .. perform optimization and ensures that certain expressions are evaluated at compile time, improving performance.
+## In the context of templates, "if constexpr" is particularly useful. It enables compile-time branching meaning the condition is 
+## evaluted at compile time, and only the relevant branch is compiled. here's an example.
+
+** #include <iostream>
+** #include <type_traits>
+
+** struct Wrapper {
+**      int value;
+** };
+
+** Wrapper wrap(int x) {
+**      return {x*2};
+** }
+
+** int increment(int x) {
+**      return x+1;
+** }
+
+** template <typename T, typename Func>
+** auto apply(T value, Func func) {
+*       auto result = func(value);
+**      if constexpr (std::is_same_v<decltype(result), Wrapper>) {
+**          return result.value;
+**      }
+**      else {
+**          return result;
+**      }
+** }
+
+** int main() {
+**      int x = 5;
+
+**      auto wrappedResult = apply(x, wrap);
+**      std::cout << "Wrapped Result: " << wrappedResult << '\n';
+
+**      auto incrementResult = apply(x, increment);
+**      std::cout << "Incremented Result: " << incrementResult << "\n";
+
+**      return 0;
+** }
+
+## In the apply function, if constexpr is used to decide at compile-time which branch of code should be executed based on the type of ..
+## ..result. When result is of type Wrapper, the function unwraps its value; otherwise, it returns the result directly. This approach ..
+## ..provides type safety and avoids runtime type checks, making your code more efficient.
+## By using constexpr for compile-time decisions, you can make your template functions more flexible and efficient, avoiding ...
+## ...unnecessary 
+## overhead. This will come especially useful in the last lesson of this course.
+
+--------------------------------------------------------------------------------------------------------------
+
 RTTI : RunTime Type Identification: 
     * It is a mechanism to find the type of an object dynamically from any available pointer or reference to the base type.
     * YOU NEED TO FIRST LEARN VIRTUAL FUNCTIONS
 
 CONST VS CONSTEXPR:
+
 
