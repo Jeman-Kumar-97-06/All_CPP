@@ -1,0 +1,30 @@
+C++
+
+THE BASICS: 
+    * Here we only discuss about the idea of what c++ is, without going into a lot of details.
+    * This section presents the notion of c++, c++'s memory model and computation, and the basic mechanisms of organising code into
+    a program.
+    * These are the language facilities supporting the procedural programming / functional programming.
+    * C++ is a compiled language. 
+        For a program to run, the source text has to be processed by a compiler, 
+        Produce Object files,
+        which are combined by a linker yielding an executable program. 
+    * A C++ program usually consists of many source code files.
+    * Source file1---------> Compile ---> Object file 1 -->|
+                                                           |--> Link --> Executable
+      Source file2---------> Compile ---> Object file 2 -->|
+
+    * The executable file depends on the hardware. It's not portable. For win it's ".exe" for linux its ".out"
+    * Only source code is portable.
+    * The ISO C++ standard defined two kinds of entities:
+        * Core language features      : built-in types (char, int, ...) and loops (for, while)
+        * Standard Library Components : container types (vector, map, ...) and I/O Operations ("<<", "getline()")
+    * C++ is statically typed language. That means, the type of every entity (object, value, name and expression) must be known to the
+    Compiler at its point of use. The type of object determines the set of operations applicable to it.
+    * The minimal C++ program is : 
+        ** int main() {}  //The minimal C++ Program 
+    * C++ must have only one "main" global function. The program starts by executing that function. 
+    * The 'int' value returned by 'main()', if any, is the program's return value to "the system".
+    * When i say : std::cout << "Hello World!\n"; , it means, the "<<" is passing the "Hello World!\n" as arg to the standard output
+    stream : std::cout
+    * A string literal is always surrounded by DOUBLE quotes.

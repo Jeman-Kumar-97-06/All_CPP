@@ -1,14 +1,7 @@
 #include <iostream>
-
-
+#include <complex>
 int main() {
-    int a;
-    int b;
-    std::cout << "Enter A : " << std::endl;
-    std::cin  >> a;
-    std::cout << "Enter B : " << std::endl;
-    std::cin  >> b;
-
-    std::cout << a+b << std::endl;
-    return 0;
+	std::complex<double> z2 = {10,3};
+	std::cout << z2 << std::endl;
+	return 0;
 }

@@ -12,11 +12,12 @@ HELLO WORLD PROGRAM:
 ------------------------------------------------------------------------------------------------------
 
 VARIABLES:
-## int    : Integers, whole nums, without decimals : 123, 30, 100
-## double : stores floating point numbers, with decimals
-## char   : stores chars, single chars such as 's' , 'S'. Chars should always be surrounded by single Quotes.
-## string : stores text, such as 'hello world'.
-## bool   : true or false (1 or 0)
+## int    : Integers, whole nums, without decimals : 123, 30, 100   : Size = 32 bits or 4 Bytes
+## double : stores floating point numbers, with decimals            : Size = 64 bits or 8 Bytes
+## char   : stores chars, single chars such as 's' , 'S'.           : Size = 8  bits or 1 Byte
+            Chars should always be surrounded by single Quotes.     
+## string : stores text, such as 'hello world'.                     : Size = 24 to 32 Bytes
+## bool   : true or false (1 or 0)                                  : Size = 8  bits or 1 Byte
 ## int x = 1000 ('int' is type, 'x' is identifier and 1000 is the value)
 
 ** #include <iostream>
