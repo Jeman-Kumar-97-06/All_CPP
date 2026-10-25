@@ -1,7 +1,17 @@
 #include <iostream>
-#include <complex>
-int main() {
-	std::complex<double> z2 = {10,3};
-	std::cout << z2 << std::endl;
+using namespace std;
+
+int main(){
+	char letter;
+	cout << "Type a letter: ";
+	cin  >> letter;
+	switch(letter){
+		case 'a':
+			cout << "'a' for apple";
+			break;
+		case 'b':
+			cout << "'b' for bat";
+			break;
+	}
 	return 0;
 }

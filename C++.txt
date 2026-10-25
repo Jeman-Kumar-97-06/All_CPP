@@ -49,7 +49,7 @@ VARIABLES:
 --------------------------------------------------------------------------------------------------------------
 
 USER INPUT:
-** include <iostream>
+** #include <iostream>
 ** using namespace std;
 ** int main()
 ** {
@@ -89,11 +89,13 @@ USER INPUT:
 
 NUMBERS:
 ** #include <iostream>
+** #include <complex>
 ** using namespace std;
 ** int main()
 ** {
-**      float  f1 = 35.8;
-**      double d1 = 12E4;
+**      float  f1          = 35.8;
+**      double d1          = 12E4;
+**      complex<double> z1 = {10, 3};
 
 **      int   x = 24;
 **      float y = 30;
@@ -105,6 +107,8 @@ NUMBERS:
 **      cout << "The sum of 24 and 30 is " << x+y << "\n";
 
 **      cout << "jeman"+42 << "\n";
+
+**      cout << z1 << endl; --> Prints (10, 3)
 
 **      bool isCodingFun = true;
 **      bool isFishTasty = false;
@@ -125,8 +129,10 @@ CHARS:
 ** {
 **      string n = "Jeman";
 **      char   g = 'B';
+**      char x[] = "Jane";
 **      cout << g << "\n";
 **      cout << n << "\n";
+**      cout << sizeof(x) << endl; --> prints '5' because "Jane" is of length 4 and +1 if for the null terminator "\0"
 **      return 0;
 ** }
 
@@ -138,7 +144,7 @@ CHARS:
 ** int main()
 ** {
 **      auto x = 5;
-**      auto y = 5.99f;
+**      auto y = 5.99f; --> 'f' at the end explicitly puts the mem size to 32 bit. If you remove 'f', the size is 64 bit
 **      cout << x << "\n";
 **      cout << y << "\n";
 **      return 0;
@@ -257,7 +263,7 @@ BOOLS:
 ** using namespace std;
 ** int main()
 ** {
-**      cout << boolalpha;
+**      cout << boolalpha;  --> Opposite is 'noboolalpha'
 **      cout << (10 < 4) << "\n";
 **      return 0;
 ** }
